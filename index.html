@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<!-- saved from url=(0055)http://127.0.0.1:5500/images/practise/portfoilio2.html# -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Interactive Portfolio</title>
   <style>
     :root {
@@ -12,9 +12,7 @@
       --accent: #7c5cff;
       --glass: rgba(255, 255, 255, 0.04);
     }
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Inter, Segoe UI, Roboto, system-ui, Arial;
@@ -59,38 +57,24 @@
       box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
       animation: fadeIn 0.5s ease;
     }
-    .page.active {
-      display: block;
-    }
+    .page.active { display: block; }
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    h1, h2 {
-      color: #7c5cff;
-    }
-    ul {
-      margin-top: 10px;
-    }
-    a {
-      color: #7c5cff;
-      text-decoration: none;
-    }
+    h1, h2 { color: #7c5cff; }
+    ul { margin-top: 10px; }
+    a { color: #7c5cff; text-decoration: none; }
     .project {
       background: rgba(255, 255, 255, 0.05);
       padding: 20px;
       border-radius: 12px;
       margin-bottom: 20px;
     }
-    .project h2 {
-      margin: 0 0 10px 0;
-      color: #7c5cff;
-    }
-    .project p {
-      color: #9aa4b2;
-    }
+    .project h2 { margin: 0 0 10px 0; color: #7c5cff; }
+    .project p { color: #9aa4b2; }
     .socials {
       margin-top: 20px;
       display: flex;
@@ -101,22 +85,39 @@
       border-radius: 8px;
       background: rgba(255, 255, 255, 0.08);
     }
+    /* New image/avatar styling */
+    .avatar-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .avatar-container img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      object-fit: cover;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    }
   </style>
 </head>
 <body>
 
   <div class="nav">
-    <button class="active" onclick="showPage(&#39;home&#39;)">Home</button>
-    <button onclick="showPage(&#39;projects&#39;)">Projects</button>
-    <button onclick="showPage(&#39;about&#39;)" class="">About</button>
+    <button class="active" onclick="showPage('home')">Home</button>
+    <button onclick="showPage('projects')">Projects</button>
+    <button onclick="showPage('about')">About</button>
   </div>
 
   <!-- HOME PAGE -->
   <div id="home" class="page active">
+    <div class="avatar-container">
+      <img src="jaat.jpg" >
+    </div>
     <h1>👋 Welcome to My Portfolio</h1>
     <p>
       Hello! I'm <strong>GOURAV KHOKHAR</strong>, a passionate developer from
-      <em>Scaler school of technology</em> currently in <em>2025</em>.
+      <em>Scaler School of Technology</em> currently in <em>2025</em>.
       I love crafting creative and interactive web projects.
     </p>
     <p>
@@ -140,7 +141,7 @@
         An interactive portfolio built using HTML, CSS, and JavaScript with draggable stickers,
         light/dark theme toggle, and modal popups for project details.
       </p>
-      <a href="http://127.0.0.1:5500/images/practise/you%20need%20the%20latest%20version%20to%20open%20it">View Code</a>
+      <a href="#">View Code</a>
     </div>
 
     <div class="project">
@@ -155,7 +156,7 @@
     <div class="project">
       <h2>3️⃣ College Event portal/sponsors</h2>
       <p>
-        A college event management web document that allows students to register, manage contacts,
+        A college event management document that allows students to register, manage contacts,
         and view sponsor details. Built with Node.js and Firebase.
       </p>
       <a href="https://docs.google.com/spreadsheets/d/1Tq9RSDbS79358OJkFy_7AEGTTMfPkeN18xiKfSp2nvo/edit?gid=1922915966#gid=1922915966">Explore Project</a>
@@ -168,7 +169,7 @@
     <p>
       I'm <strong>GOURAV KHOKHAR</strong>, a creative web developer and designer passionate about
       building interactive web experiences. Currently studying at
-      <strong>Scaler school of technology</strong>, <strong>Your Year</strong>.
+      <strong>Scaler School of Technology</strong>.
     </p>
 
     <p>
@@ -178,17 +179,17 @@
 
     <h2>🎓 Education</h2>
     <ul>
-      <li><strong>College:</strong> Scaler School of technology</li>
-      <li><strong>Degree:</strong>  B.Sc </li>
+      <li><strong>College:</strong> Scaler School of Technology</li>
+      <li><strong>Degree:</strong> B.Sc</li>
       <li><strong>Year:</strong> 2029</li>
     </ul>
 
     <h2>📱 Connect With Me</h2>
     <div class="socials">
-      <a href="https://instagram.com/" target="https://www.instagram.com/6ft.__freak/?utm_source=qr&amp;r=nametag">📸 Instagram</a>
-      <a href="https://github.com/" target="https://github.com/">🐙 GitHub</a>
-      <a href="https://open.spotify.com/" target="https://open.spotify.com/user/31naoozlqyzpirxwdeudhs7uxqcu?si=dbfe58e7fe5a423b">🎵 Spotify</a>
-      <a href="https://in.linkedin.com/" target="https://www.linkedin.com/checkpoint/challenge/AgH0Zoboxl28PQAAAZmz02p-WdDRyRYmebVrI8Ga0QY0y3DjIpLW00Hnh0Te_9_AOEm-WiimUyPp3G5_v9WfIy_-zFcmHQ?ut=1Iep6xqi8rwrY1">🔫Linkedin</a>
+      <a href="https://instagram.com/6ft.__freak" target="_blank">📸 Instagram</a>
+      <a href="https://github.com/" target="_blank">🐙 GitHub</a>
+      <a href="https://open.spotify.com/user/31naoozlqyzpirxwdeudhs7uxqcu?si=dbfe58e7fe5a423b" target="_blank">🎵 Spotify</a>
+      <a href="https://www.linkedin.com/" target="_blank">🔗 Linkedin</a>
     </div>
   </div>
 
@@ -200,45 +201,7 @@
       event.target.classList.add('active');
     }
   </script>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 
+</body>
+</html>
 
-
-</body></html>
