@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)http://127.0.0.1:5500/images/practise/portfoilio2.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Interactive Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f1724;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #7c5cff;
+      --glass: rgba(255, 255, 255, 0.04);
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, Segoe UI, Roboto, system-ui, Arial;
+      color: #e6eef8;
+      background: linear-gradient(180deg, var(--bg), #071028);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 20px 0 40px 0;
+    }
+    .nav button {
+      text-decoration: none;
+      color: #e6eef8;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      transition: 0.3s;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .nav button:hover, .nav button.active {
+      background: var(--accent);
+      color: white;
+    }
+
+    .page {
+      display: none;
+      width: 100%;
+      max-width: 900px;
+      padding: 20px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.04);
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.6);
+      animation: fadeIn 0.5s ease;
+    }
+    .page.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2 {
+      color: #7c5cff;
+    }
+    ul {
+      margin-top: 10px;
+    }
+    a {
+      color: #7c5cff;
+      text-decoration: none;
+    }
+    .project {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+    .project h2 {
+      margin: 0 0 10px 0;
+      color: #7c5cff;
+    }
+    .project p {
+      color: #9aa4b2;
+    }
+    .socials {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+    }
+    .socials a {
+      padding: 10px 15px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <button class="active" onclick="showPage(&#39;home&#39;)">Home</button>
+    <button onclick="showPage(&#39;projects&#39;)">Projects</button>
+    <button onclick="showPage(&#39;about&#39;)" class="">About</button>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div id="home" class="page active">
+    <h1>👋 Welcome to My Portfolio</h1>
+    <p>
+      Hello! I'm <strong>GOURAV KHOKHAR</strong>, a passionate developer from
+      <em>Scaler school of technology</em> currently in <em>2025</em>.
+      I love crafting creative and interactive web projects.
+    </p>
+    <p>
+      Use the navigation bar above to explore my <strong>Projects</strong> and
+      learn more <strong>About Me</strong>.
+    </p>
+    <ul>
+      <li>💡 <strong>Interests:</strong> Web Development, UI/UX Design, Game Development</li>
+      <li>📍 <strong>Location:</strong> India</li>
+      <li>🎯 <strong>Goal:</strong> To create interactive and accessible digital experiences.</li>
+    </ul>
+  </div>
+
+  <!-- PROJECTS PAGE -->
+  <div id="projects" class="page">
+    <h1>🚀 My Projects</h1>
+
+    <div class="project">
+      <h2>1️⃣ Interactive Portfolio</h2>
+      <p>
+        An interactive portfolio built using HTML, CSS, and JavaScript with draggable stickers,
+        light/dark theme toggle, and modal popups for project details.
+      </p>
+      <a href="http://127.0.0.1:5500/images/practise/you%20need%20the%20latest%20version%20to%20open%20it">View Code</a>
+    </div>
+
+    <div class="project">
+      <h2>2️⃣ Space Survival Game</h2>
+      <p>
+        A browser-based survival game made with HTML Canvas. You dodge asteroids and collect
+        stars for points. Includes infinite play mode!
+      </p>
+      <a href="https://abhaykumarmishra027.itch.io/devil-hunter">Play Now</a>
+    </div>
+
+    <div class="project">
+      <h2>3️⃣ College Event portal/sponsors</h2>
+      <p>
+        A college event management web document that allows students to register, manage contacts,
+        and view sponsor details. Built with Node.js and Firebase.
+      </p>
+      <a href="https://docs.google.com/spreadsheets/d/1Tq9RSDbS79358OJkFy_7AEGTTMfPkeN18xiKfSp2nvo/edit?gid=1922915966#gid=1922915966">Explore Project</a>
+    </div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <div id="about" class="page">
+    <h1>📖 About Me</h1>
+    <p>
+      I'm <strong>GOURAV KHOKHAR</strong>, a creative web developer and designer passionate about
+      building interactive web experiences. Currently studying at
+      <strong>Scaler school of technology</strong>, <strong>Your Year</strong>.
+    </p>
+
+    <p>
+      When I'm not coding, I love listening to music 🎧, exploring new technologies 💻,
+      and playing games 🎮.
+    </p>
+
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>College:</strong> Scaler School of technology</li>
+      <li><strong>Degree:</strong>  B.Sc </li>
+      <li><strong>Year:</strong> 2029</li>
+    </ul>
+
+    <h2>📱 Connect With Me</h2>
+    <div class="socials">
+      <a href="https://instagram.com/" target="https://www.instagram.com/6ft.__freak/?utm_source=qr&amp;r=nametag">📸 Instagram</a>
+      <a href="https://github.com/" target="https://github.com/">🐙 GitHub</a>
+      <a href="https://open.spotify.com/" target="https://open.spotify.com/user/31naoozlqyzpirxwdeudhs7uxqcu?si=dbfe58e7fe5a423b">🎵 Spotify</a>
+      <a href="https://in.linkedin.com/" target="https://www.linkedin.com/checkpoint/challenge/AgH0Zoboxl28PQAAAZmz02p-WdDRyRYmebVrI8Ga0QY0y3DjIpLW00Hnh0Te_9_AOEm-WiimUyPp3G5_v9WfIy_-zFcmHQ?ut=1Iep6xqi8rwrY1">🔫Linkedin</a>
+    </div>
+  </div>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav button').forEach(b => b.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
